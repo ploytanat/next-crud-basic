@@ -36,8 +36,12 @@ export default function Home() {
     <main className="container mx-auto my-3 ">
       <h1>NextJS Crud + MongoDB</h1>
       <hr  className="my-3"></hr>
-      <button className="bg-green-500 p-3 text-white rounded"><Link href="/create">Created Post</Link></button>
-      <div className="grid grid-cols-4 mt-3 gap-5">
+
+   
+
+            <button className="bg-green-500 p-3 text-white rounded flex "><Link href="/create">Created Post</Link></button>
+
+      <div className="grid grid-cols-1 mt-3 gap-5 p-5 md:grid-cols-4">
         {postData && postData.length > 0 ? (
           postData.map(val => (
          
