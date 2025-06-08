@@ -79,8 +79,9 @@ useEffect (() =>{
       </Link>
       <form onSubmit={handleSubmit}>
         <input
+        
         onChange={(e) => setNewTitle(e.target.value)}
-          value={postData.title}
+          
           type="text"
           className="w-[300px] block bg-gray-200 border rounded-sm py-2 px-3 text-lg my-2"
           placeholder={postData.title}
